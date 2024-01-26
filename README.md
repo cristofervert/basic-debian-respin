@@ -1,2 +1,3 @@
 # respin_rancio_debian
-debian_
+Basic utilities and background setup
+
