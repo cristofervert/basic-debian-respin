@@ -1,19 +1,18 @@
 #!/bin/bash
 
-bg_dir="/usr/share/kubuntu-default-settings"
+bg_dir="/usr/share/backgrounds"
 format="jpg"
 prefix="Shrek"
 i=0
 
 download_files(){
 	echo -e "DOWNLOADING BACKGROUNDS"
-	imgs='yfxKMpEQ'
-	wget https://pastebin.com/raw/$imgs
-	dos2unix $imgs
+	wget https://pastebin.com/raw/$1
+	dos2unix $1
 	while read element;
 	do
         	wget -A jpg,jpeg -nd $element
-	done < $imgs
+	done < $1
 	echo -e "IMAGES DOWNLOADED"
 }
 
