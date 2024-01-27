@@ -5,8 +5,8 @@ update_system(){
         sudo apt update && sudo apt upgrade -y
         sudo apt autoremove -y
         echo -e "INSTALLING DEPENDENCIES"
-	sudo apt install gcc make get git python3 python3-pip dos2 unix -y
-        sudo apt install vim vlc thunar transmission-qt -y
+	sudo apt install gcc make wget git python3 python3-pip dos2unix -y
+        sudo apt install vim vlc thunar -y
 	echo -e "DONE"
 }
 
